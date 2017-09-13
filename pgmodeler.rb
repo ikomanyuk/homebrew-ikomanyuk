@@ -22,7 +22,7 @@ index 06edd7b..679baa3 100644
 --- a/pgmodeler.pri
 +++ b/pgmodeler.pri
 @@ -134,6 +134,7 @@ macx {
- 
+
    # Specifies where to find the libraries at runtime
    QMAKE_RPATHDIR += $$PRIVATELIBDIR
 +  QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/
@@ -39,5 +39,5 @@ index 06edd7b..679baa3 100644
 +  PGSQL_INC = /usr/local/opt/postgresql/include
 -  XML_INC = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2
 -  XML_LIB = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libxml2.dylib
-+  XML_INC = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2
++  XML_INC = /usr/include/libxml2
 +  XML_LIB = /usr/lib/libxml2.dylib
