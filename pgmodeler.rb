@@ -2,7 +2,7 @@ require "formula"
 
 class Pgmodeler < Formula
   homepage 'https://www.pgmodeler.com.br/'
-  head 'https://github.com/pgmodeler/pgmodeler.git', :revision => '61d4b019dbc929b9c6d35cec26afc104ab42bba1'
+  head 'https://github.com/pgmodeler/pgmodeler.git', :revision => 'e8ec35929f2f26688201d0d5d27d4369ec151ec7'
 
   depends_on 'qt5'
   depends_on 'postgresql'
